@@ -1,6 +1,8 @@
 extend schema
   @link(url: "https://specs.apollo.dev/federation/v2.5", import: ["@key"])
 
+directive @uppercase() on FIELD_DEFINITION
+
 type Query {
   """
   Get all available products to shop for. Optionally provide some search filters
