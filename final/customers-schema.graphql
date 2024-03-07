@@ -6,6 +6,8 @@ type Query {
   user(id: ID!): User
 }
 
+directive @uppercase on FIELD_DEFINITION
+
 """
 An user account in our system
 """
