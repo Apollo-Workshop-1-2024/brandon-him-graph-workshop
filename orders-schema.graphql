@@ -1,6 +1,8 @@
 extend schema
   @link(url: "https://specs.apollo.dev/federation/v2.5", import: ["@key", "@authenticated", "@requiresScopes"])
 
+directive @uppercase() on FIELD_DEFINITION
+
 type Query {
   """
   Get a specific order by id. Meant to be used for a detailed view of an order
